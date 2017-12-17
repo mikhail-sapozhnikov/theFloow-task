@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="flowdrive">
+        <classes>
+            <class name="com.thefloow.flowdrivetest.LoginPagesTest">
+                <methods>
+                    <include name="checkLoginPage"/>
+                    <include name="checkForgotPasswordPage"/>
+                    <include name="checkAccountDetailsPage"/>
+                </methods>
+            </class>
+            <class name="com.thefloow.flowdrivetest.RegistrationTest">
+                <methods>
+                    <include name="checkRegistrationHappyPath"/>
+                    <include name="checkPasswordValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
